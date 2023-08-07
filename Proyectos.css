@@ -1,0 +1,155 @@
+* {
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #ffbb00;
+    color: white;
+}
+
+nav .mobile {
+    display: none;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    background-color: #3f3f3f;
+}
+
+
+.logo h1 {
+    color: #ffffff; 
+}
+
+nav a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #3f3f3f; 
+}
+
+nav .desktop {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .desktop .primary, nav .desktop .secondary {
+    display: flex;
+}
+
+nav .desktop .secondary.mini {
+    display: none;
+}   
+
+
+.principal {
+    background-image: url(img/Proyectos.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    height: 1200px;
+}
+
+
+
+
+footer {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #24262B; 
+    padding: 30px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.footer-links {
+    width: 20%;
+    padding: 0 15px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #ffbb00;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #BBBBBB;
+    display: block;
+    margin-bottom: 15px; 
+    transition: all .3s ease;
+}
+
+.footer-links ul {
+    padding-left: 0;
+}
+
+.footer-links ul li a:hover {
+    color: white;
+    padding-left: 6px;
+}
+
+.Social-links a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all .5s ease;
+}
+
+.Social-links a:hover {
+    background-color: #00C3FF;
+}
+
+@media(max-width:991px){
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
